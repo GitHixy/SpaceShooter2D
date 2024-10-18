@@ -8,7 +8,7 @@ public class EnemySpawner : MonoBehaviour
     public float spawnRate = 2f;
     public float spawnRangeX = 8f;
     private float timeSinceLastSpawn = 0f;
-    public float difficultyIncreaseRate = 0.1f; // Increase difficulty over time
+    public float difficultyIncreaseRate = 0.5f; // Increase difficulty over time
 
     private void Update()
     {
