@@ -204,7 +204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  maxHealth: 10
+  maxHealth: 6
   explosionEffect: {fileID: 3757568430594472010, guid: 29a538e1b7ea68946a53b7122978d293, type: 3}
   enemyBulletPrefab: {fileID: 4700865213064828725, guid: 48788efa96f2751429b52086f9741a86, type: 3}
   firePoint: {fileID: 5721323129818800972}

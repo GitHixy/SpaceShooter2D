@@ -16,7 +16,7 @@ public class PlayerBullet : MonoBehaviour
         // Check for collisions with enemies
         if (collision.CompareTag("Enemy"))
         {
-            Destroy(collision.gameObject);
+            collision.GetComponent<Enemy>().TakeDamage(2);
             Destroy(gameObject);
         }
     }

@@ -13,9 +13,9 @@ public class EnemyBullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("PlayerController"))
         {
-            collision.GetComponent<PlayerController>().TakeDamage(1); // Deal 1 damage to the player
+            collision.GetComponent<PlayerController>().TakeDamage(2); // Deal 2 damage to the player
             Destroy(gameObject);
         }
     }

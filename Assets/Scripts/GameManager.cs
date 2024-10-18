@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     public Text countdownText;
     public Text startText;
 
+    public GameObject playerHealthBar;
+
     public EnemySpawner enemySpawner; // Reference to the spawner script
 
     private void Start()
@@ -26,6 +28,7 @@ public class GameManager : MonoBehaviour
     {
         menuPanel.SetActive(false);
         gamePanel.SetActive(true);
+        playerHealthBar.SetActive(false);
         StartCoroutine(StartGameCountdown());
     }
 
@@ -48,7 +51,8 @@ public class GameManager : MonoBehaviour
         startText.text = "START!";
         yield return new WaitForSeconds(1f);
         startText.gameObject.SetActive(false);
-
+        
+        playerHealthBar.SetActive(true);
         enemySpawner.enabled = true; // Enable enemy spawning
     }
 }
